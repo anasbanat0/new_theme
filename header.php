@@ -5,13 +5,14 @@
 */
 ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html <?php language_attributes();?>>
   <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo('charset');?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WordPress Theme</title>
+    <?php wp_head();?>
   </head>
-  <body>
+  <body <?php body_class();?>>
+    <?php wp_body_open();?>
     <header>
       header
     </header>
